@@ -6,73 +6,47 @@
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge"/>
 </p>
 
+# Índice 
+* [Descrição](#descrição)
+* [Funcionalidades do Projeto](#funcionalidades-do-projeto)
+* [Organização do código](#organização-do-código)
+* [Tecnologia utilizada](#tecnologia-utilizada)
+
+
 ## Descrição
+Projeto desenvolvifo para segundo desafio da Cubos Academy + IFood.
 
-Desenvolvimento de uma API para o banco digital "Cubos Bank".
+Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter funções de administrador como criar contas bancarias, atualiza e excluir essas contas. Além de funcionalidades comuns como depoísitos, saque, e transferências entre contas e também vizualizar saldo e gerar extratos de transações bancárias.
 
-Está API te permite:
-- Criar contas bancárias;
-- Listar as contas existentes;
-- Atualizar os dado dos usuários das contas;
-- Exclui uma conta;
-- Fazer depósitos em uma conta;
-- Fazer saques de valores em uma conta;
-- Fazer transfrências entre as contas;
-- Consultar o saldo da conta;
-- Emitir extrato bancário.
+<hr>
 
-## Organização do código
+# 🔨 Funcionalidades do Projeto
 
-- Arquivo index para iniciar a plicação;
-- Arquivo de banco de dados para a persistencia dos dados;
-- Arquivo de rotas, Endpoints;
-- Pasta para controladores contendo:
-    - Passwaords - Verificas as senhas solicitadas.
-    - Conta - Funções relacionadas a conta, como listar contas, criar contas, 
-    - Transacoes - Funções relacionadas a transações de conta, como depositos,
-    - Facilits - Funções para auxiliar validações de dados obrigatórios nas fu
+- `Vizualizar todas as contas existentes`: È acessada através de senha do administrador para poder verificar todas as contas existentes no banco de dados.
+- `Cria nova conta`: Te permite criar uma nova conta par aum usuário não existente no banco de dados, caso ele já tenha uma outra conta não será possível criar uma nova, cpf e e-mail são chaves únicas.
+- `Atualizar dados de usuários`: Te permite altera informações de cara usuário pelo número da conta fornecida.
+- `Excluir conta`: Te permite excluir uma conta de usuário existente contando que o saldo da conta seja 0.
+- `Depositar`: Te permite fazer depósitos na conta informada.
+- `Saque`: Efetua saques do saldo da conta informada, necessário possúir senha da conta informada.
+- `Transferências`: Efetua transferências entre contas, necessário possúir o número e senha da conta de origem e o número da conta de destino.
+- `Saldo`: Informa o saldo existente na conta informada, necessário pussúir número e senha da conta.
+- `Extrato bancário`: Exibe extrato de transações bancárias existente em uma conta, necessário possúir número e senha da conta.
 
+<hr>
 
-### EndPoints
+# 📑 Organização do código
 
-Arquivo rotas possui os EndPoints utilizados.
-Deve-se utilizar esses endpoints para conversar com a API e fazer suas lateraç
+- `Arquivo index para iniciar a plicação;`
+- `Arquivo de banco de dados para a persistencia dos dados;`
+- `Arquivo de rotas, Endpoints;`
+- `Pasta para controladores contendo:`
+    - `Passwaords - Verificas as senhas solicitadas.`
+    - `Conta - Funções relacionadas a conta, como listar contas, criar contas, atualizar dados, excluir contas, saldos.`
+    - `Transacoes - Funções relacionadas a transações de conta, como depositos, saques, transferências e extrato de transações.`
+    - `Facilits - Funções para auxiliar validações de dados obrigatórios nas fuções de conta e transações, além da escrita da persistencia de dados.`
+ 
+<hr>
 
-<img loading="lazy" src="/img/endpoints.jpg" width="450" height="350">
+# 💻 Tecnologia utilizada
+ - `JavaScript` <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20" height="20" />
 
-### Verificar senhas
-
--  Para listar contas existente no Banco como adm utilize:
-
-   GET "/contas?senha_banco=Cubos123Bank"  --> Verifica se está utilizando uma
-
--  Para solicitar saldos e extratos de contas utilize:
-
-   GET "/contas/saldo?numero_conta=123&senha=123" --> Verifica se o número e a
-
-    GET "/contas/extrato?numero_conta=123&senha=123" --> Verifica se o número 
-
-<img loading="lazy" src="/img/passwords.jpg" width="450" height="350">
-
-
-### Contas e alterações
-
--Criação de conta:
-
-    POST "/contas"
-
-    Irá cria uma nova conta com um número único, será verificado se o cpf ou e
-
-    Campos de preenchimento obrigatórios para a requisição: 
-
- ```javascript
-// POST /contas
-{
-    "nome": " ",
-    "cpf": " ",
-    "data_nascimento": " ",
-    "telefone": " ",
-    "email": " ",
-    "senha": " "
-}
-```
