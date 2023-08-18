@@ -1,4 +1,4 @@
-<img loading="lazy" src="/img/CUBOS BANK.png" width="100%" height="100">
+<img loading="lazy" src="/img/CUBOS BANK.png" width="750%" height="100">
 
 ## Projeto Cubos Bank
 
