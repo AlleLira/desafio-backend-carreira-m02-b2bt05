@@ -8,10 +8,11 @@
 
 # Índice 
 * [Descrição](#descrição)
-* [Funcionalidades do Projeto](#funcionalidadesdoprojeto)
-* [Organização do código](#organizaçãodocódigo)
-* [Tecnologia utilizada](#tecnologiautilizada)
+* [Funcionalidades do Projeto](#funcionalidades-do-projeto)
+* [Organização do código](#organização-do~código)
+* [Tecnologia utilizada](#tecnologia-utilizada)
 
+<hr>
 
 ## Descrição
 Projeto desenvolvifo para segundo desafio da Cubos Academy + IFood.
@@ -26,9 +27,9 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
   
     -`Resultasdos e Erros:`
   
-    <img loading="lazy" src="/img/listar-contas.jpg" width="250" height="250"> <img loading="lazy" src="/img/listar-contas-erro.jpg" width="250" height="250"> <img loading="lazy" src="/img/listar-contas-erro.jpg" width="250" height="250">
-    
+    <img loading="lazy" src="/img/listar-contas.jpg" width="250" height="250"> <img loading="lazy" src="/img/listar-contas -erro.jpg" width="250" height="250">
 
+  
 - `Cria nova conta`: Te permite criar uma nova conta par aum usuário não existente no banco de dados, caso ele já tenha uma outra conta não será possível criar uma nova, cpf e e-mail são chaves únicas.
   
     -`Resultasdos e Erros:`
