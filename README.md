@@ -1,4 +1,4 @@
-![] <img src="/img/CUBOS BANK.png">
+![] <img loading="lazy" src="/img/CUBOS BANK.png" width="450" height="250">
 
 ## Projeto Cubos Bank
 
