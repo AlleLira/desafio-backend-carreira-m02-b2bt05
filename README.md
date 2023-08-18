@@ -1,6 +1,6 @@
 ![] <img src="/img/CUBOS BANK.png">
 
-# Projeto Cubos Bank
+## Projeto Cubos Bank
 
 ## Descrição
 
