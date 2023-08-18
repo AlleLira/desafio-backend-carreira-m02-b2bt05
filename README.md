@@ -26,7 +26,7 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
   
     -`Resultasdos e Erros:`
   
-    <img loading="lazy" src="/img/listar-contas.jpg" width="250" height="250"> <img loading="lazy" src="/img/listar-contas-erro.jpg." width="250" height="250">
+    <img loading="lazy" src="/img/listar-contas.jpg" width="250" height="250"> <img loading="lazy" src="/img/listar-contas-erro.jpg" width="250" height="250">
     
 
 - `Cria nova conta`: Te permite criar uma nova conta par aum usuário não existente no banco de dados, caso ele já tenha uma outra conta não será possível criar uma nova, cpf e e-mail são chaves únicas.
@@ -82,7 +82,7 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
   
      -`Resultasdos e Erros:`
   
-    <img loading="lazy" src="/img/extrato.jpg" width="2500" height="250"> <img loading="lazy" src="/img/extrato-erro.jpg" width="2500" height="250"> <img loading="lazy" src="/img/extrato-erro1.jpg" width="2500" height="250"> <img loading="lazy" src="/img/extrato-erro2.jpg" width="2500" height="250">
+    <img loading="lazy" src="/img/extrato.jpg" width="250" height="250"> <img loading="lazy" src="/img/extrato-erro.jpg" width="250" height="250"> <img loading="lazy" src="/img/extrato-erro1.jpg" width="250" height="250"> <img loading="lazy" src="/img/extrato-erro2.jpg" width="250" height="250">
 
 <hr>
 
