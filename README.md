@@ -1,7 +1,11 @@
 <img loading="lazy" src="/img/CUBOS BANK.png" width="750%" height="250">
 
 <h1 align="center"> Projeto Cubos Bank </h1>
-![Finalizado](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+<p align="center">
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge"/>
+</p>
+
 ## Descrição
 
 Desenvolvimento de uma API para o banco digital "Cubos Bank".
