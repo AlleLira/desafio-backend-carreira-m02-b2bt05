@@ -20,7 +20,7 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
 
 <hr>
 
-## 🔨 ## Funcionalidades do Projeto
+## Funcionalidades do Projeto 🔨
 
 - `Vizualizar todas as contas existentes`: È acessada através de senha do administrador para poder verificar todas as contas existentes no banco de dados.
 - `Cria nova conta`: Te permite criar uma nova conta par aum usuário não existente no banco de dados, caso ele já tenha uma outra conta não será possível criar uma nova, cpf e e-mail são chaves únicas.
@@ -34,7 +34,7 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
 
 <hr>
 
-## 📑 ## Organização do código
+## Organização do código 📑
 
 - `Arquivo index para iniciar a plicação;`
 - `Arquivo de banco de dados para a persistencia dos dados;`
@@ -47,6 +47,6 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
  
 <hr>
 
-## 💻 ## Tecnologia utilizada
+## Tecnologia utilizada 💻
  - `JavaScript` <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20" height="20" />
 
