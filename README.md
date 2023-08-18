@@ -8,9 +8,9 @@
 
 # Índice 
 * [Descrição](#descrição)
-* [Funcionalidades do Projeto](#funcionalidades-do-projeto)
-* [Organização do código](#organização-do-código)
-* [Tecnologia utilizada](#tecnologia-utilizada)
+* [Funcionalidades do Projeto](#Funcionalidades-do-Projeto)
+* [Organização do código](#Organização-do-código)
+* [Tecnologia utilizada](#Tecnologia-utilizada)
 
 
 ## Descrição
