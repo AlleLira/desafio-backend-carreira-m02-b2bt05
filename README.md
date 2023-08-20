@@ -9,7 +9,7 @@
 # Índice 
 * [Descrição](#descrição)
 * [Funcionalidades do Projeto](#funcionalidades-do-projeto)
-* [Organização do código](#organização-do~código)
+* [Organização do código](#organização-do-código)
 * [Tecnologia utilizada](#tecnologia-utilizada)
 
 <hr>
@@ -100,6 +100,6 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
  
 <hr>
 
-## Tecnologia utilizada 💻
+## Tecnologia utilizada
  - `JavaScript` <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20" height="20" />
 
