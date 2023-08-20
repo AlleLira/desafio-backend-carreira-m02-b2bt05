@@ -15,13 +15,13 @@
 <hr>
 
 ## Descrição
-Projeto desenvolvifo para segundo desafio da Cubos Academy + IFood.
+Projeto desenvolvido para o segundo desafio da Cubos Academy + IFood.
 
-Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter funções de administrador como criar contas bancarias, atualiza e excluir essas contas. Além de funcionalidades comuns como depoísitos, saque, e transferências entre contas e também vizualizar saldo e gerar extratos de transações bancárias.
+Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter funções de administrador como criar contas bancarias, atualizar e excluir essas contas. Além de funcionalidades comuns como depoísitos, saque, e transferências entre contas e também vizualizar saldo e gerar extratos de transações bancárias.
 
 <hr>
 
-## Funcionalidades do Projeto 🔨
+## Funcionalidades do Projeto
 
 - `Vizualizar todas as contas existentes`: È acessada através de senha do administrador para poder verificar todas as contas existentes no banco de dados.
   
