@@ -23,7 +23,7 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
 
 ## Funcionalidades do Projeto
 
-- `Vizualizar todas as contas existentes`: È acessada através de senha do administrador para poder verificar todas as contas existentes no banco de dados.
+- `Vizualizar todas as contas existentes`: É acessada através de senha do administrador para poder verificar todas as contas existentes no banco de dados.
   
     -`Resultasdos e Erros:`
   
@@ -87,7 +87,7 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
 
 <hr>
 
-## Organização do código 📑
+## Organização do código
 
 - `Arquivo index para iniciar a plicação;`
 - `Arquivo de banco de dados para a persistencia dos dados;`
