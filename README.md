@@ -6,19 +6,19 @@
 
 # Índice 
 * [Descrição](#descrição)
-* [Funcionalidades do Projeto](#funcionalidadesdoprojeto)
-* [Organização do código](#organizaçãodocódigo)
-* [Tecnologia utilizada](#tecnologiautilizada)
 * [Funcionalidades do Projeto](#funcionalidades-do-projeto)
-* [Organização do código](#organização-do~código)
+* [Organização do código](#organização-do-código)
 * [Tecnologia utilizada](#tecnologia-utilizada)
+
 
 <hr>
 
 ## Descrição
 Projeto desenvolvifo para segundo desafio da Cubos Academy + IFood.
 Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter funções de administrador como criar contas bancarias, atualiza e excluir essas contas. Além de funcionalidades comuns como depoísitos, saque, e transferências entre contas e também vizualizar saldo e gerar extratos de transações bancárias.
+
 <hr>
+
 ## Funcionalidades do Projeto
 - `Vizualizar todas as contas existentes`: È acessada através de senha do administrador para poder verificar todas as contas existentes no banco de dados.
 
