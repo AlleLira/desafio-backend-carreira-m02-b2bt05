@@ -1,6 +1,4 @@
-const bancoDeDados = require("../bancodedados");
 const { contas } = require("../bancodedados")
-const facilits = require('./facilits');
 
 
 // Estrtura para listar contas bancárias existente.
@@ -12,9 +10,10 @@ const listarContas = (req,res) =>{
 const addConta = (req, res) =>{
     const {nome, cpf, data_nascimento, telefone, email, senha} = req.body;
 
-    if(facilits.verificarContaExistente(cpf, email)){
+    const verificarContaExistente = contas.some(conta => conta.usuario.cpf === cpf || conta.usuario.email === email);
+        if(verificarContaExistente){
         return res.status(400).json({ mensagem: 'Já existe uma conta com o cpf ou e-mail informado!'});
-    }
+        }
 
     const novaConta = {
         numero: (contas.length + 1).toString(),
@@ -31,22 +30,26 @@ const addConta = (req, res) =>{
 
     contas.push(novaConta);
 
-    facilits.escrita(contas);
-
     res.status(201).send();
    
 };
 
 //Estrutura alterar informações de uma conta já existente.
 const editarConta = (req, res) =>{
-   const numeroConta = req.params.numeroConta;
-   const {nome, cpf, data_nascimento, telefone, email, senha} = req.body;
-
-    if(facilits.verificarContaExistente(cpf, email)){
-        return res.status(400).json({ mensagem: 'Já existe uma conta com o cpf ou e-mail informado!'});
-    }
-
+    const numeroConta = req.params.numeroConta;
+    const {nome, cpf, data_nascimento, telefone, email, senha} = req.body;
     const atualizacaoConta = contas.find( conta => conta.numero === numeroConta);
+    
+    const verificarCpf = contas.find(conta => conta.numero !== numeroConta && conta.usuario.cpf === cpf)
+    const verificarEmail = contas.find(conta => conta.numero !== numeroConta && conta.usuario.email === email)
+
+   if(verificarCpf){
+    return res.status(400).json({ mensagem: 'O cpf informado já existe cadastrado!'});
+   }
+   if(verificarEmail){
+    return res.status(400).json({ mensagem: 'O email informado já existe cadastrado!'});
+}
+
     atualizacaoConta.usuario.nome = nome;
     atualizacaoConta.usuario.cpf = cpf;
     atualizacaoConta.usuario.data_nascimento = data_nascimento;
@@ -54,10 +57,7 @@ const editarConta = (req, res) =>{
     atualizacaoConta.usuario.email = email;
     atualizacaoConta.usuario.senha = senha;
 
-    facilits.escrita(contas);
-
     return res.status(204).send();
-
 };
 
 //Estrtura para deletar contas existents.
@@ -73,7 +73,6 @@ const deletarConta = (req, res) =>{
     const index = contas.indexOf(facilits.verificarContaExistente);
     contas.splice(index, 1);
 
-    facilits.escrita(contas);
 
     return res.status(204).send();
 };

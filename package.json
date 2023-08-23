@@ -4,7 +4,7 @@
   "description": "![](https://i.imgur.com/xG74tOh.png)",
   "main": "index.js",
   "scripts": {
-    "dev": "./src/index"
+    "dev": "./src/index.js"
   },
   "keywords": [],
   "author": "",

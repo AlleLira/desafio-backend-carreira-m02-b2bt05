@@ -1,6 +1,5 @@
-const express = require('express');
 const { contas, depositos, saques, transferencias } = require("../bancodedados")
-const escrita = require('./facilits');
+
 
 // Estrutura para a realização de depósitos nas contas bancárias.
 const deposito = (req, res) => {
@@ -19,15 +18,13 @@ const deposito = (req, res) => {
     depositoConta.saldo += valor;
 
     const transacao = {
-        data: new Date().toISOString(),
+        data: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''),
         numero_conta: numero_conta,
         valor: valor
     };
 
     depositos.push(transacao);
     
-    escrita.escrita(depositos);
-
     return res.status(200).send();
 
 };
@@ -56,14 +53,12 @@ const saque = (req, res) => {
     contaLocalizada.saldo -= valor;
 
     const transacao = {
-        data: new Date().toISOString(),
+        data: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''),
         numero_conta: numero_conta,
-        valor: valor
+        valor: valor 
     };
 
     saques.push(transacao);
-    
-    escrita.escrita(saques);
 
     return res.status(200).send();
 
@@ -91,7 +86,7 @@ const transferencia = (req, res) => {
     }
 
     if( valor <= 0){
-        return res.status(400).json({ mensagem: 'O valor do saque deve ser maior que zero.'});
+        return res.status(400).json({ mensagem: 'O valor da transferência deve ser maior que zero.'});
     }
 
     if( valor > contaOrigemLocalizada.saldo){
@@ -103,15 +98,14 @@ const transferencia = (req, res) => {
     contaDestinoLocalizada.saldo += valor;
 
     const transacao = {
-        data: new Date().toISOString(),
+        data: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''),
         numero_conta_origem: numero_conta_origem,
         numero_conta_destino: numero_conta_destino,
         valor: valor
     };
 
     transferencias.push(transacao);
-    
-    escrita.escrita(transferencias);
+
 
     return res.status(200).send();
 

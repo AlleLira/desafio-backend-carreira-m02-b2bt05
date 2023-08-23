@@ -1,20 +1,20 @@
 const express = require('express');
 const conta = require('./controladores/conta');
-const password = require('./controladores/passwords');
+
 const transacoes = require('./controladores/transacoes');
-const facilits = require('./controladores/facilits');
+const validar = require('./controladores/validacoes');
 
 const rotas = express();
 
 
-rotas.get('/contas',password.passwordContas, conta.listarContas);
-rotas.post('/contas',facilits.validarCampo, conta.addConta);
-rotas.put('/contas/:numeroConta/usuario', facilits.verificarNumConta, facilits.validarCampo, conta.editarConta);
-rotas.delete('/contas/:numeroConta', facilits.verificarNumConta,conta.deletarConta);
-rotas.post('/transacoes/depositar', facilits.verNumContaTrans,transacoes.deposito);
-rotas.post('/transacoes/sacar', facilits.verNumContaTrans,transacoes.saque);
+rotas.get('/contas',validar.passwordContas, conta.listarContas);
+rotas.post('/contas',validar.validarCampo, conta.addConta);
+rotas.put('/contas/:numeroConta/usuario', validar.verificarNumConta, validar.validarCampo, conta.editarConta);
+rotas.delete('/contas/:numeroConta', validar.verificarNumConta,conta.deletarConta);
+rotas.post('/transacoes/depositar', validar.verNumContaTrans,transacoes.deposito);
+rotas.post('/transacoes/sacar', validar.verNumContaTrans,transacoes.saque);
 rotas.post('/transacoes/transferir', transacoes.transferencia);
-rotas.get('/contas/saldo',password.passwordInfo, conta.saldo);
-rotas.get('/contas/extrato',password.passwordInfo, transacoes.extrato);
+rotas.get('/contas/saldo',validar.passwordInfo, conta.saldo);
+rotas.get('/contas/extrato',validar.passwordInfo, transacoes.extrato);
 
 module.exports = rotas;
