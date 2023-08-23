@@ -93,10 +93,9 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
 - `Arquivo de banco de dados para a persistencia dos dados;`
 - `Arquivo de rotas, Endpoints;`
 - `Pasta para controladores contendo:`
-    - `Passwaords - Verificas as senhas solicitadas.`
     - `Conta - Funções relacionadas a conta, como listar contas, criar contas, atualizar dados, excluir contas, saldos.`
     - `Transacoes - Funções relacionadas a transações de conta, como depositos, saques, transferências e extrato de transações.`
-    - `Facilits - Funções para auxiliar validações de dados obrigatórios nas fuções de conta e transações, além da escrita da persistencia de dados.`
+    - `Validações - Funções para auxiliar validações de dados obrigatórios nas fuções de conta e transações.`
  
 <hr>
 
