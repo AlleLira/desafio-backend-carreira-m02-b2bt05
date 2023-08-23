@@ -105,5 +105,5 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
     <img loading="lazy" src="/img/val 1.jpg" width="250" height="250"> <img loading="lazy" src="/img/val 2.jpg" width="250" height="250">
  
 <hr>
-## Tecnologia utilizada 💻
- - `JavaScript` <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20" height="20" />
+## Tecnologia utilizada 
+ - `JavaScript` <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" />
