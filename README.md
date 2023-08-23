@@ -1,4 +1,4 @@
-<img loading="lazy" src="/img/CUBOS BANK.png" width="750" height="250">
+<img loading="lazy" src="/img/CUBOS BANK.png" width="100%" height="250">
 <h1 align="center"> Projeto Cubos Bank </h1>
 <p align="center">
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge"/>
@@ -98,7 +98,7 @@ Desenvolvimento de uma API para o banco digital "Cubos Bank", que te permite ter
 
     - `Transacoes - Funções relacionadas a transações de conta, como depositos, saques, transferências e extrato de transações.`
 
-    <img loading="lazy" src="/img/trans 1.jpg 1.jpg" width="250" height="250"> <img loading="lazy" src="/img//trans 2.jpg" width="250" height="250"> <img loading="lazy" src="/img/trans 3.jpg" width="250" height="250"> <img loading="lazy" src="/img/trans 4.jpg" width="250" height="250">
+    <img loading="lazy" src="/img/trans 1.jpg 1.jpg" width="250" height="250"> <img loading="lazy" src="/img/trans 2.jpg" width="250" height="250"> <img loading="lazy" src="/img/trans 3.jpg" width="250" height="250"> <img loading="lazy" src="/img/trans 4.jpg" width="250" height="250">
 
     - `Validações - Funções para auxiliar validações de dados obrigatórios nas fuções de conta e transações.`
 
